@@ -1,0 +1,27 @@
+project_folder/
+│
+├── src/
+│   ├── FileHandler.h         (Header for FileHandler class)
+│   ├── FileHandler.cpp       (Implementation of FileHandler class)
+│   ├── NamedPipe.h           (Header for NamedPipe class)
+│   ├── SharedMemory.h        (Header for SharedMemory class)
+│   ├── Logger.h              (Header for Logger utility)
+│   ├── Requester.h           (Header for Requester class)
+│   ├── Requester.cpp         (Implementation of Requester class)
+│   └── requester_main.cpp    (Main function for the requester app)
+│
+├── build/                     (Compiled binaries)
+│
+├── CMakeLists.txt              (CMake configuration file)
+│
+├── data/                       (Sample data files)
+│   ├── sample.txt
+│   └── ...
+│
+├── logs/                       (Log files)
+│   └── run_logs.txt
+│
+└── tests/                      (Test files and configuration)
+    ├── CMakeLists.txt
+    ├── test_file_handler.cpp   (Unit tests for FileHandler)
+    └── ...
