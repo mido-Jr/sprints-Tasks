@@ -1,0 +1,2 @@
+/usr/bin/ar qc liblogger_library.a CMakeFiles/logger_library.dir/home/mido/valeo/Capstone_Project/libraries/logger.cpp.o
+/usr/bin/ranlib liblogger_library.a
