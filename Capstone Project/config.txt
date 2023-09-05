@@ -1,4 +1,0 @@
-logFilePath  ../../run_logs.txt
-MessageQueue /Sprint
-logReceiverPort 1238
-logReceiverIP 192.168.79.129

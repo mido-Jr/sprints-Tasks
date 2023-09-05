@@ -1,4 +1,0 @@
-/home/mido/valeo/Capstone Project/Host/build/CMakeFiles/file_library.dir
-/home/mido/valeo/Capstone Project/Host/build/CMakeFiles/LogServerApp.dir
-/home/mido/valeo/Capstone Project/Host/build/CMakeFiles/edit_cache.dir
-/home/mido/valeo/Capstone Project/Host/build/CMakeFiles/rebuild_cache.dir
