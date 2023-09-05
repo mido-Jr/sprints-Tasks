@@ -7,13 +7,7 @@
 #include <boost/log/sources/global_logger_storage.hpp>
 
 // the logs are also written to LOGFILE
-
-#define LOGFILE_ "../../run_logs.txt"
-
-extern std::string LOGFILE;
-
-void SetLogFile(const std::string& logFilePath); // Declare the function without defining it here
-
+#define LOGFILE "../../run_logs.txt"
 
 // just log messages with severity >= SEVERITY_THRESHOLD are written
 #define SEVERITY_THRESHOLD logging::trivial::trace

@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.o"
-  "CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.o.d"
+  "CMakeFiles/file_library.dir/home/mb/Desktop/Capstone_Project/libraries/file.cpp.o"
   "libfile_library.a"
   "libfile_library.pdb"
 )

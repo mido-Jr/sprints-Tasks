@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/mido/valeo/Capstone Project/Host"
+CMAKE_SOURCE_DIR = "/media/user/Mido/Capstone Project/Host"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/mido/valeo/Capstone Project/Host/build"
+CMAKE_BINARY_DIR = "/media/user/Mido/Capstone Project/Host/build"
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -83,14 +83,14 @@ clean: CMakeFiles/LogServerApp.dir/clean
 CMakeFiles/file_library.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" --progress-num=3,4 "Built target file_library"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/user/Mido/Capstone Project/Host/build/CMakeFiles" --progress-num=3,4 "Built target file_library"
 .PHONY : CMakeFiles/file_library.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/file_library.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" 2
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/user/Mido/Capstone Project/Host/build/CMakeFiles" 2
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/file_library.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/user/Mido/Capstone Project/Host/build/CMakeFiles" 0
 .PHONY : CMakeFiles/file_library.dir/rule
 
 # Convenience name for target.
@@ -109,14 +109,14 @@ CMakeFiles/file_library.dir/clean:
 CMakeFiles/LogServerApp.dir/all: CMakeFiles/file_library.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogServerApp.dir/build.make CMakeFiles/LogServerApp.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogServerApp.dir/build.make CMakeFiles/LogServerApp.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" --progress-num=1,2 "Built target LogServerApp"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir="/media/user/Mido/Capstone Project/Host/build/CMakeFiles" --progress-num=1,2 "Built target LogServerApp"
 .PHONY : CMakeFiles/LogServerApp.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/LogServerApp.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" 4
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/user/Mido/Capstone Project/Host/build/CMakeFiles" 4
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/LogServerApp.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/user/Mido/Capstone Project/Host/build/CMakeFiles" 0
 .PHONY : CMakeFiles/LogServerApp.dir/rule
 
 # Convenience name for target.

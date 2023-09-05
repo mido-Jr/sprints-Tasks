@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mb/Desktop/Capstone Project/libraries/file.cpp
+file.h
+/home/mb/Desktop/Capstone Project/libraries/file.h
+
+/home/mb/Desktop/Capstone Project/libraries/file.h
+map
+-
+string
+-
+fstream
+-
+sstream
+-
+

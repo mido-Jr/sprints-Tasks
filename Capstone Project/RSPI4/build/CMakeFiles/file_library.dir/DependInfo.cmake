@@ -1,14 +1,15 @@
-
-# Consider dependencies only in project.
-set(CMAKE_DEPENDS_IN_PROJECT_ONLY OFF)
-
 # The set of languages for which implicit dependencies are needed:
 set(CMAKE_DEPENDS_LANGUAGES
+  "CXX"
   )
+# The set of files for implicit dependencies of each language:
+set(CMAKE_DEPENDS_CHECK_CXX
+  "/home/mb/Desktop/Capstone Project/libraries/file.cpp" "/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/file_library.dir/home/mb/Desktop/Capstone_Project/libraries/file.cpp.o"
+  )
+set(CMAKE_CXX_COMPILER_ID "GNU")
 
-# The set of dependency files which are needed:
-set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/mido/valeo/Capstone Project/libraries/file.cpp" "CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.o" "gcc" "CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.o.d"
+# The include file search paths:
+set(CMAKE_CXX_TARGET_INCLUDE_PATH
   )
 
 # Targets to which this target links.

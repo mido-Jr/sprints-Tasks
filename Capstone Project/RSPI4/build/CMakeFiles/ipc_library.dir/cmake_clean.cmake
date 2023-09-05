@@ -1,6 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/ipc_library.dir/home/mido/valeo/Capstone_Project/libraries/ipc_library.cpp.o"
-  "CMakeFiles/ipc_library.dir/home/mido/valeo/Capstone_Project/libraries/ipc_library.cpp.o.d"
+  "CMakeFiles/ipc_library.dir/home/mb/Desktop/Capstone_Project/libraries/ipc_library.cpp.o"
   "libipc_library.pdb"
   "libipc_library.so"
 )

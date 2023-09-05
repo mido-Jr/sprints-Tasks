@@ -44,6 +44,7 @@ void setup_ethernet_connection(const std::string& logReceiverIP, int logReceiver
     if (server_socket == -1) {
         std::cout << "Socket creation failed";
         // Handle the error or exit as appropriate
+        return; // Terminate the function
     }
 
     // Set up server address
@@ -55,25 +56,27 @@ void setup_ethernet_connection(const std::string& logReceiverIP, int logReceiver
     if (bind(server_socket, (struct sockaddr*)&server_address, sizeof(server_address)) == -1) {
         perror("Bind failed");
         close(server_socket);
+        return; // Terminate the function
     }
     
     if (listen(server_socket, 5) == -1) {
         perror("Listen failed");
         close(server_socket);
+        return; // Terminate the function
     }
     
+    std::cout << "Server is listening for incoming connections..." << std::endl;
 }
+
 
 int main() {
 
     Configuration config;
     read_configuration("../../config.txt", config);
-    
-    std::cout<<"Test Mido "<<std::endl;
-    
+        
     setup_ethernet_connection(config.logReceiverIP, config.logReceiverPort);
 
-    std::cout << "Server is listening for incoming connections..." << std::endl;
+
 
     while (true) {
         int client_socket;

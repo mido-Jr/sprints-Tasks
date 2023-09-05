@@ -32,6 +32,7 @@ struct Configuration {
     std::string logFilePath;
     std::string MessageQueue;
     std::string logReceiverIP;
+    std::string DaemonFlag;
     int logReceiverPort;
 };
 
@@ -43,11 +44,14 @@ void read_configuration(const std::string& config_file, Configuration& config) {
     config.logFilePath = configFile.get("logFilePath");
     config.MessageQueue = configFile.get("MessageQueue");
     config.logReceiverIP = configFile.get("logReceiverIP");
+    config.DaemonFlag = configFile.get("DaemonFlag");
     config.logReceiverPort = std::stoi(configFile.get("logReceiverPort"));
 }
 
 static void handle_signals(int signum) {
     signal_received = signum;
+    std::cout<<"Daemon App Stoped !"<<std::endl;
+    
 }
 
 static void setup_signal_handlers() {
@@ -107,12 +111,14 @@ static void skeleton_daemon()
 
     /* Open the log file */
     openlog ("firstdaemon", LOG_PID, LOG_DAEMON);
+    
+    std::cout<<"Daemon App Started !"<<std::endl;
 }
 
 
 void setup_boost_logger(const std::string& logFilePath) {
 
-    SetLogFile(logFilePath);
+    //SetLogFile(logFilePath);
     logger::construct_logger();
 }
 
@@ -169,18 +175,28 @@ void rotate_log_file(const std::string& logFilePath, Configuration& config) {
 
 int main() {
 
-    skeleton_daemon();
-    setup_signal_handlers();
-
     // Read the configuration file, extract values, and set up the logger and Ethernet connection
 
     Configuration config;
     read_configuration("../../config.txt", config);
+    
+    
+    if (config.DaemonFlag == "True"){
+    
+	skeleton_daemon();
+	//setup_signal_handlers();
+    }
+
       
     // Set up the Boost logger with the retrieved log file path
-    setup_boost_logger(config.logFilePath);
-	
+    //setup_boost_logger(config.logFilePath);
+    logger::construct_logger();
     LOG_TRACE   << "This is a trace message";
+    LOG_DEBUG   << "This is a debug message";
+    LOG_INFO    << "This is an info message";
+    LOG_WARNING << "This is a warning message";
+    LOG_ERROR   << "This is an error message";
+    LOG_FATAL   << "This is a fatal message";
     
     // Set up Ethernet connection with retrieved IP and port
     setup_ethernet_connection(config.logReceiverIP, config.logReceiverPort);
@@ -189,7 +205,7 @@ int main() {
     //std::cerr << "IPCMessageReceiver" << std::endl;
     
     
-    while (!signal_received) {
+    while (true) {
         try {
             std::string received_message = receiver.receiveMessage();
             LOG_INFO << "Received message: " << received_message;

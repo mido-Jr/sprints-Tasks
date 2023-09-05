@@ -13,8 +13,9 @@ set(CMAKE_CXX_EXTENSIONS OFF)
 #set(CMAKE_C_COMPILER /home/mido/x-tools/aarch64-rpi4-linux-gnu/bin/aarch64-rpi4-linux-gnu-gcc)
 #set(CMAKE_CXX_COMPILER /home/mido/x-tools/aarch64-rpi4-linux-gnu/bin/aarch64-rpi4-linux-gnu-g++)
 
-# Set Boost root directory
-set(BOOST_ROOT /usr/include/boost)
+
+find_package(Boost REQUIRED COMPONENTS log)
+
 
 # Build the IPC library
 add_library(ipc_library SHARED
@@ -22,10 +23,6 @@ add_library(ipc_library SHARED
     ../libraries/ipc_library.h
 )
 
-add_library(logger_library
-    ../libraries/logger.cpp
-    ../libraries/logger.h
-)
 
 # Build the File library
 add_library(file_library
@@ -33,32 +30,31 @@ add_library(file_library
     ../libraries/file.h
 )
 
-# Find Boost libraries
-find_package(Boost REQUIRED COMPONENTS log)
-
 # Build the LoggerDaemon executable
 add_executable(Daemon
     Daemon.cpp
+    ../libraries/logger.cpp
 )
 
 # Build the Mathematical executable
 add_executable(Mathapp
     Mathematical.cpp
+    ../libraries/logger.cpp
 )
 
 # Link libraries
 target_link_libraries(Daemon
     ipc_library
-    logger_library
     file_library
     Boost::log
+    rt
 )
 
 target_link_libraries(Mathapp
     ipc_library
-    logger_library
     file_library
     Boost::log
+    rt
 )
 
 # Include directories
@@ -71,3 +67,4 @@ target_include_directories(Mathapp
     PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}/libraries
 )
+

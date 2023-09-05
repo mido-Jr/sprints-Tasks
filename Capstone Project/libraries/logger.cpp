@@ -12,18 +12,10 @@
 #include <boost/log/utility/setup/common_attributes.hpp>
 #include <boost/make_shared.hpp>
 #include <boost/shared_ptr.hpp>
-
 #include <fstream>
 #include <ostream>
 #include <iostream>
 
-std::string LOGFILE;
-
-// Function to update the log file path
-void SetLogFile(const std::string& filePath) {
-    LOGFILE = filePath;
-    //std::cout << "SetLogFile "<<std::endl;
-}
 
 namespace logging = boost::log;
 namespace src = boost::log::sources;
@@ -35,9 +27,10 @@ BOOST_LOG_ATTRIBUTE_KEYWORD(line_id, "LineID", unsigned int)
 BOOST_LOG_ATTRIBUTE_KEYWORD(timestamp, "TimeStamp", boost::posix_time::ptime)
 BOOST_LOG_ATTRIBUTE_KEYWORD(severity, "Severity", logging::trivial::severity_level)
 
+
+
 BOOST_LOG_GLOBAL_LOGGER_INIT(logger, src::severity_logger_mt) {
 
-    //std::cout << "BOOST_LOG_GLOBAL_LOGGER_INIT "<<std::endl;
     src::severity_logger_mt<boost::log::trivial::severity_level> logger;
 
     // add attributes
@@ -52,7 +45,7 @@ BOOST_LOG_GLOBAL_LOGGER_INIT(logger, src::severity_logger_mt) {
     sink->locked_backend()->add_stream(boost::make_shared<std::ofstream>(LOGFILE));
 
     // add "console" output stream to our sink
-    sink->locked_backend()->add_stream(boost::shared_ptr<std::ostream>(&std::clog, boost::null_deleter()));
+    //sink->locked_backend()->add_stream(boost::shared_ptr<std::ostream>(&std::clog, boost::null_deleter()));
 
     // specify the format of the log message
     logging::formatter formatter = expr::stream

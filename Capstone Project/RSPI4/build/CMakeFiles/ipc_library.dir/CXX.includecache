@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mb/Desktop/Capstone Project/libraries/ipc_library.cpp
+ipc_library.h
+/home/mb/Desktop/Capstone Project/libraries/ipc_library.h
+
+/home/mb/Desktop/Capstone Project/libraries/ipc_library.h
+mqueue.h
+-
+iostream
+-
+syslog.h
+-
+errno.h
+-
+string.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+mqueue.h
+-
+cstring
+-
+string
+-
+

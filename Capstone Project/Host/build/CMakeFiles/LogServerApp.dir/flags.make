@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I"/home/mido/valeo/Capstone Project/Host/libraries"
+CXX_INCLUDES = -I"/media/user/Mido/Capstone Project/Host/libraries"
 
 CXX_FLAGS = -std=c++17
 

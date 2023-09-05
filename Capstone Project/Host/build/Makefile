@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = "/home/mido/valeo/Capstone Project/Host"
+CMAKE_SOURCE_DIR = "/media/user/Mido/Capstone Project/Host"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = "/home/mido/valeo/Capstone Project/Host/build"
+CMAKE_BINARY_DIR = "/media/user/Mido/Capstone Project/Host/build"
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" "/home/mido/valeo/Capstone Project/Host/build//CMakeFiles/progress.marks"
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/user/Mido/Capstone Project/Host/build/CMakeFiles" "/media/user/Mido/Capstone Project/Host/build//CMakeFiles/progress.marks"
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start "/home/mido/valeo/Capstone Project/Host/build/CMakeFiles" 0
+	$(CMAKE_COMMAND) -E cmake_progress_start "/media/user/Mido/Capstone Project/Host/build/CMakeFiles" 0
 .PHONY : all
 
 # The main clean target
@@ -166,29 +166,29 @@ Logger_receiver.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/LogServerApp.dir/build.make CMakeFiles/LogServerApp.dir/Logger_receiver.cpp.s
 .PHONY : Logger_receiver.cpp.s
 
-home/mido/valeo/Capstone_Project/libraries/file.o: home/mido/valeo/Capstone_Project/libraries/file.cpp.o
-.PHONY : home/mido/valeo/Capstone_Project/libraries/file.o
+media/user/Mido/Capstone_Project/libraries/file.o: media/user/Mido/Capstone_Project/libraries/file.cpp.o
+.PHONY : media/user/Mido/Capstone_Project/libraries/file.o
 
 # target to build an object file
-home/mido/valeo/Capstone_Project/libraries/file.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.o
-.PHONY : home/mido/valeo/Capstone_Project/libraries/file.cpp.o
+media/user/Mido/Capstone_Project/libraries/file.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/media/user/Mido/Capstone_Project/libraries/file.cpp.o
+.PHONY : media/user/Mido/Capstone_Project/libraries/file.cpp.o
 
-home/mido/valeo/Capstone_Project/libraries/file.i: home/mido/valeo/Capstone_Project/libraries/file.cpp.i
-.PHONY : home/mido/valeo/Capstone_Project/libraries/file.i
+media/user/Mido/Capstone_Project/libraries/file.i: media/user/Mido/Capstone_Project/libraries/file.cpp.i
+.PHONY : media/user/Mido/Capstone_Project/libraries/file.i
 
 # target to preprocess a source file
-home/mido/valeo/Capstone_Project/libraries/file.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.i
-.PHONY : home/mido/valeo/Capstone_Project/libraries/file.cpp.i
+media/user/Mido/Capstone_Project/libraries/file.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/media/user/Mido/Capstone_Project/libraries/file.cpp.i
+.PHONY : media/user/Mido/Capstone_Project/libraries/file.cpp.i
 
-home/mido/valeo/Capstone_Project/libraries/file.s: home/mido/valeo/Capstone_Project/libraries/file.cpp.s
-.PHONY : home/mido/valeo/Capstone_Project/libraries/file.s
+media/user/Mido/Capstone_Project/libraries/file.s: media/user/Mido/Capstone_Project/libraries/file.cpp.s
+.PHONY : media/user/Mido/Capstone_Project/libraries/file.s
 
 # target to generate assembly for a file
-home/mido/valeo/Capstone_Project/libraries/file.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/home/mido/valeo/Capstone_Project/libraries/file.cpp.s
-.PHONY : home/mido/valeo/Capstone_Project/libraries/file.cpp.s
+media/user/Mido/Capstone_Project/libraries/file.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/file_library.dir/build.make CMakeFiles/file_library.dir/media/user/Mido/Capstone_Project/libraries/file.cpp.s
+.PHONY : media/user/Mido/Capstone_Project/libraries/file.cpp.s
 
 # Help Target
 help:
@@ -203,9 +203,9 @@ help:
 	@echo "... Logger_receiver.o"
 	@echo "... Logger_receiver.i"
 	@echo "... Logger_receiver.s"
-	@echo "... home/mido/valeo/Capstone_Project/libraries/file.o"
-	@echo "... home/mido/valeo/Capstone_Project/libraries/file.i"
-	@echo "... home/mido/valeo/Capstone_Project/libraries/file.s"
+	@echo "... media/user/Mido/Capstone_Project/libraries/file.o"
+	@echo "... media/user/Mido/Capstone_Project/libraries/file.i"
+	@echo "... media/user/Mido/Capstone_Project/libraries/file.s"
 .PHONY : help
 
 

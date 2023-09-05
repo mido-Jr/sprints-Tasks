@@ -1,5 +1,5 @@
 CMakeFiles/LogServerApp.dir/Logger_receiver.cpp.o: \
- /home/mido/valeo/Capstone\ Project/Host/Logger_receiver.cpp \
+ /media/user/Mido/Capstone\ Project/Host/Logger_receiver.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/11/iostream \
  /usr/include/x86_64-linux-gnu/c++/11/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/11/bits/os_defines.h \
@@ -228,7 +228,7 @@ CMakeFiles/LogServerApp.dir/Logger_receiver.cpp.o: \
  /usr/include/c++/11/bits/refwrap.h \
  /usr/include/c++/11/ext/aligned_buffer.h \
  /usr/include/c++/11/bits/fs_dir.h /usr/include/c++/11/bits/fs_ops.h \
- /home/mido/valeo/Capstone\ Project/Host/../libraries/file.h \
+ /media/user/Mido/Capstone\ Project/Host/../libraries/file.h \
  /usr/include/c++/11/map /usr/include/c++/11/bits/stl_tree.h \
  /usr/include/c++/11/bits/node_handle.h \
  /usr/include/c++/11/bits/stl_map.h \
