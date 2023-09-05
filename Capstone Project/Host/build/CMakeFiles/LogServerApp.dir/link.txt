@@ -1,1 +1,0 @@
-/usr/bin/c++ CMakeFiles/LogServerApp.dir/Logger_receiver.cpp.o -o LogServerApp  libfile_library.a 
