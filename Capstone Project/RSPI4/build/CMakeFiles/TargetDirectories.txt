@@ -1,6 +1,0 @@
-/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/edit_cache.dir
-/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/Mathapp.dir
-/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/Daemon.dir
-/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/file_library.dir
-/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/rebuild_cache.dir
-/home/mb/Desktop/Capstone Project/RSPI4/build/CMakeFiles/ipc_library.dir
