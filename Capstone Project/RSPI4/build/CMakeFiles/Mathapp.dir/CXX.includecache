@@ -1,0 +1,100 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/mb/Desktop/Capstone Project/RSPI4/Mathematical.cpp
+iostream
+-
+vector
+-
+cstdlib
+-
+cmath
+-
+cstring
+-
+string
+-
+../libraries/ipc_library.h
+/home/mb/Desktop/Capstone Project/libraries/ipc_library.h
+../libraries/logger.h
+/home/mb/Desktop/Capstone Project/libraries/logger.h
+../libraries/file.h
+/home/mb/Desktop/Capstone Project/libraries/file.h
+
+/home/mb/Desktop/Capstone Project/libraries/file.h
+map
+-
+string
+-
+fstream
+-
+sstream
+-
+
+/home/mb/Desktop/Capstone Project/libraries/ipc_library.h
+mqueue.h
+-
+iostream
+-
+syslog.h
+-
+errno.h
+-
+string.h
+-
+fcntl.h
+-
+sys/stat.h
+-
+mqueue.h
+-
+cstring
+-
+string
+-
+
+/home/mb/Desktop/Capstone Project/libraries/logger.cpp
+logger.h
+/home/mb/Desktop/Capstone Project/libraries/logger.h
+boost/log/core/core.hpp
+-
+boost/log/expressions/formatters/date_time.hpp
+-
+boost/log/expressions.hpp
+-
+boost/log/sinks/sync_frontend.hpp
+-
+boost/log/sinks/text_ostream_backend.hpp
+-
+boost/log/sources/severity_logger.hpp
+-
+boost/log/support/date_time.hpp
+-
+boost/log/trivial.hpp
+-
+boost/core/null_deleter.hpp
+-
+boost/log/utility/setup/common_attributes.hpp
+-
+boost/make_shared.hpp
+-
+boost/shared_ptr.hpp
+-
+fstream
+-
+ostream
+-
+iostream
+-
+
+/home/mb/Desktop/Capstone Project/libraries/logger.h
+boost/log/trivial.hpp
+-
+boost/log/sources/global_logger_storage.hpp
+-
+
