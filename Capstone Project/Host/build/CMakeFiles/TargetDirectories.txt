@@ -1,4 +1,0 @@
-/media/user/Mido/Capstone Project/Host/build/CMakeFiles/file_library.dir
-/media/user/Mido/Capstone Project/Host/build/CMakeFiles/LogServerApp.dir
-/media/user/Mido/Capstone Project/Host/build/CMakeFiles/edit_cache.dir
-/media/user/Mido/Capstone Project/Host/build/CMakeFiles/rebuild_cache.dir
