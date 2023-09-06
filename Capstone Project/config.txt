@@ -1,5 +1,0 @@
-logFilePath  ../../run_logs.txt
-MessageQueue /Sprint
-logReceiverPort 7894
-logReceiverIP 10.1.10.158
-DaemonFlag False
